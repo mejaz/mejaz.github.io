@@ -213,3 +213,12 @@ span {
     display: block;
   }
 }
+.navig {
+  position : fixed;
+  text-align: right;
+  top : 50%;
+  right : 2%;
+  background-color : pink;
+  opacity: 0.3;
+  padding: 20px;
+}

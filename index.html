@@ -50,7 +50,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
   <meta name="viewport" content="width=device-width">
 </head>
-<body unresolved>
+<body>
   <div id="main">
     <!-- Hello world!   You'll be deleting this line in the course -->
 
@@ -136,6 +136,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     if(document.getElementById('map') === null) {
       document.getElementById('mapDiv').style.display = 'none';
     }
+
+/* animated name */    
     
 $("#name").mouseover(function(){
   $(this).stop().animate({"font-size" : "50px"},100);
@@ -143,6 +145,7 @@ $("#name").mouseover(function(){
 .mouseout(function(){
   $(this).stop().animate({"font-size" : "40px"},100);
 });
+
 /* Email Pointer */
 
 $(".email").mouseover(function(){
@@ -177,7 +180,9 @@ $(".mobile").mouseover(function(){
 });
 $(".mobile").click(function(){
     window.location.href = 'callto:' + $(this).text();
-})
+});
+
+/* twitter pointer */
 
 $(".tweet").mouseover(function(){
   $(this).stop().animate({"font-size" : "20px"}, 100);
@@ -196,6 +201,8 @@ $(".tweet").click(function(){
       "https://twitter.com/" + $(this).text().replace(/@/,""), "_blank"
       );
 });
+
+/* github pointer */
 
 
 $(".git").mouseover(function(){
@@ -216,6 +223,8 @@ $(".git").click(function(){
       );
 });
 
+/* location pointer */
+
 $(".loc").mouseover(function(){
   $(this).stop().animate({"font-size" : "20px"}, 100);
   $(this).css("color" , "lightblue");
@@ -232,6 +241,18 @@ $(".loc").click(function(){
     $('html, body').animate({
         scrollTop : $("#mapDiv").offset().top
       }, 1000);
+});
+
+/* navigation bar */
+
+$("ul.navig li").mouseover(function() {
+  $(this).css("cursor" , "pointer");
+});
+$("ul.navig").mouseover(function() {
+  $(this).css("opacity" , "0.9");
+})
+.mouseout(function(){
+  $(this).css("opacity" , "0.3");
 });
 
 </script>

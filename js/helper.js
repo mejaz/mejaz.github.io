@@ -55,32 +55,60 @@ var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<br><a href="#">%data%</a>';
 
-var internationalizeButton = '<button onclick = "inName(name)">Internationalize</button>';
-var scrollUp = '<button id="scroll" onclick = goUp() style="position : fixed; top : 90%; right : 5%">Scroll Up</button>'
+var internationalizeButton = '<button class="InterN">Internationalize</button>';
+var nav = '<ul class="navig"><li><a onclick="goUp(\'#header\')">Bio</a></li><li><a onclick="goUp(\'#workExperience\')">Work Experience</a></li><li><a onclick="goUp(\'#projects\')">Projects</a></li><li><a onclick="goUp(\'#education\')">Education</a></li><li><a onclick="goUp(\'#mapDiv\')">Where I lived and Worked</a></li><li><a onclick="goUp(\'#header\')">Scroll Up</a></li></ul>';
+
 var googleMap = '<div id="map"></div>';
 
 
 /*
 Scroll up function
 */
-function goUp(){
+function goUp(a){
   $('html, body').animate({ 
-    scrollTop : $("#header").offset().top},1000);
+    scrollTop : $(a).offset().top},1000);
 }
 
-// $(document).ready(function(){
-//   if ($('#scroll').height() <= $('#scroll').offset().top()){
-//     $('#scroll').hide()
-//   });
-// });
+/* Internationalize button */
 
+function inName(a) {
+  if (a === 'Internationalize') {
+    var oName = $('#name').text();
+    var nName = [];
+    oName = oName.split(" ");
+    nName[0] = oName[0].toUpperCase();
+    for (var i = 1; i < oName.length; i++) {
+      nName[i] = oName[i][0].toUpperCase() + oName[i].slice(1).toLowerCase();  
+    }
+    var newN = "";
+    for (i in nName) {
+      newN = newN + " " + nName[i];
+    }
+    return [newN, "Local"];
+  }
+  else if (a === 'Local') {
+    var oName = $('#name').text();
+    oName = oName.split(" ");
+    var nName = [];
+    for (var i = 0; i < oName.length; i++) {
+      nName[i] = oName[i][0].toUpperCase() + oName[i].slice(1).toLowerCase();  
+
+    }
+    var newN = "";
+    for (i in nName) {
+      newN = newN + " " + nName[i];
+    }
+    return [newN, "Internationalize"];
+  }
+}
 /*
 The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
 */
 $(document).ready(function() {
-  $('button').click(function() {
-    var iName = inName() || function(){};
-    $('#name').html(iName);  
+  $('.InterN').click(function() {
+    var iName = inName($(this).text());
+    $('#name').text($.trim(iName[0]));
+    $(this).text(iName[1]);
   });
 });
 
