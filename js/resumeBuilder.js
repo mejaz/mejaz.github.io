@@ -11,7 +11,7 @@ var bio = {
 	"welcomeMessage" : "Welcome to Ejaz's Page",
 	"bioPic" : "images/fry.jpg",
 	"skills" : [
-		"HTML","CSS","JavaScript","JSON"
+		"HTML","CSS","JavaScript","jQuery","JSON"
 	],
 	displayBio : function(){
 			$("#header").prepend(HTMLheaderRole.replace("%data%", bio.role));
