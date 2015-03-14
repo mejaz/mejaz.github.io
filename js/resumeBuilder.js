@@ -97,7 +97,7 @@ var education = {
 var work = {
 	"jobs" : [
 		{
-			"employer" : "UHG",
+			"employer" : "UnitedHealth Group",
 			"title" : "Senior Test Engineer",
 			"location" : "Sector 144, Noida, India",
 			"dates" : "2014 - till date",
@@ -106,7 +106,7 @@ var work = {
 			"The provider requests for the claim information, submits claims etc."
 		},
 		{
-			"employer" : "UHG",
+			"employer" : "UnitedHealth Group",
 			"title" : "Test Engineer",
 			"location" : "Sector 144, Noida, India",
 			"dates" : "2012 - 2014",
