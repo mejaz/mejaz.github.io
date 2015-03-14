@@ -9,9 +9,9 @@ var bio = {
 		"location" : "Abul Fazal, New Delhi"
 	},
 	"welcomeMessage" : "Welcome to Ejaz's Page",
-	"bioPic" : "images/fry.jpg",
+	"bioPic" : "images/Ejaz1.png",
 	"skills" : [
-		"HTML","CSS","JavaScript","jQuery","JSON"
+		"Manual Testing", "Automated Testing - QTP","VB Scripting", "SQL", "HTML5","CSS","JavaScript","jQuery","JSON", "Python", "PyQt"
 	],
 	displayBio : function(){
 			$("#header").prepend(HTMLheaderRole.replace("%data%", bio.role));
@@ -101,24 +101,28 @@ var work = {
 			"title" : "Senior Test Engineer",
 			"location" : "Sector 144, Noida, India",
 			"dates" : "2014 - till date",
-			"description" : "to decideto decideto decideto decideto decideto decideto decideto decideto decideto decideto decideto decideto" +
-			"decideto decideto decideto decideto decideto decideto decideto decideto decideto decideto decide"
+			"description" : "B2B is a middle-ware application which accepts input files from the Provider in an EDI X12 format, validates the files and translates it into XML format. The XML file is further sent to the requested backend system." + "<br />" +
+			"The Response from the backend is returned in XML format and B2B validates the response and converts it into EDI X12 format and sends it back to the Provider." +
+			"The provider requests for the claim information, submits claims etc."
 		},
 		{
 			"employer" : "UHG",
 			"title" : "Test Engineer",
 			"location" : "Sector 144, Noida, India",
 			"dates" : "2012 - 2014",
-			"description" : "to decideto decideto decideto decideto decideto decideto decideto decideto decideto decideto decideto" +
-			"decideto decideto decideto decideto decideto decideto decideto decideto decideto decideto decideto decide"
+			"description" : "I have worked on AS400 Mainframe application – RxClaim. It is a back-end application for auto processing of health insurance claims. Multiple front-end applications gather data from this application and get the claims processed automatically, and get the result displayed on their front-ends. In Mainframes the projects were mainly relating to Claims processing or Data Migration from small subsystems to larger subsystems, in case of probable sudden rise in customer base." +
+			"<br />" + "Earlier in my team, I was working on a consumer-facing Health Insurance website, where in the customer can order drugs online, do Drug Pricing, select branded or generic drugs according to their health plans and make payments. It involved web services testing using SoapUI, database testing using SQL explorer, Mobile Application Testing for the Mobile site. " +
+			"I have worked on OptumRx Mobile application with testing on mobiles and mobile emulator, for Andriod, BlackBerry and iPhones."
 		},
 		{
 			"employer" : "TechMahindra",
 			"title" : "Technical Associate",
 			"location" : "Sector 60, Noida, India",
 			"dates" : "2010 - 2012",
-			"description" : "to decideto decideto decideto decideto decideto decideto decideto decideto decideto decideto decideto" +
-			"decideto decideto decideto decideto decideto decideto decideto decideto decideto decideto decideto decide"
+			"description" : "I worked on an At&t's Web Application - PDC, testing project. We were a 50-member team taking care of the different niches of this application." + 
+			"AT&T sells Wireless, Wire line phones and High Speed Internet, DSL connections using this application. Porting of wireless number, change account type, wireless number for business customer and many more features are available with this application." +
+			"<br />" + "This application is connected with the Telegence, as a Middleware, for wireless customers and OMS from Amdocs for Wire line connections." +
+			"We had a dedicated Data Team, which provided us with the data that we required for our testing or else in testing some very specific functionality, we had to create the data and get it processed before we could make use of it."
 		}
 	],
 	displayWork : function(){
