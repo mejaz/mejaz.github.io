@@ -1,6 +1,6 @@
 var bio = {
 	"name" : "Mohd Ejaz Siddiqui",
-	"role" : "Web Developer",
+	"role" : "Sr. Test Engineer",
 	"contacts" : {
 		"mobile" : "+919873446383",
 		"email" : "mohdejazsiddiqui@gmail.com",
