@@ -45,7 +45,7 @@ var education = {
 		"name" : "IILM Academy of Higher Learning",
 		"location" : "Greater Noida, India",
 		"degree" : "B.Tech",
-		"majors" : ["Electronics","Mathematics"],
+		"majors" : ["Electronics and Communication","Mathematics"],
 		"date" : 2009,
 		"url" : "wwww.iilm.com",
 	},
@@ -60,15 +60,15 @@ var education = {
 	],
 	"onlineCourses" : [
 		{
-			"title" : "JavaScript",
+			"title" : "Python",
 			"school" : "Udacity",
 			"dates" : "2015",
 			"url" : "www.udacity.com"
 		},
 		{
-			"title" : "Java",
+			"title" : "Front End Web Developer",
 			"school" : "Udacity",
-			"dates" : 2014,
+			"dates" : "2015",
 			"url" : "www.udacity.com"
 		}
 	],
@@ -141,18 +141,32 @@ var work = {
 var projects = {
 	"projects" : [
 		{
-			"title" : "AT&T",
+			"title" : "TechMahindra - AT&T - POS.COM",
 			"dates" : "2010-2012",
-			"description" : "Worked on PDC.",
+			"description" : "-	Take part in System Requirement Doc Walk Through – Internal and External." + "<br />" +
+			"-	Take part in High Level Design Doc Walk Through	- Internal and External." + "<br />" +
+			"-	Test Planning – Test Package creation and send for approvals." + "<br />" +
+			"-	Test Cases creation." + "<br />" +
+			"-	Test Cases Walk Through – Internal and External." + "<br />" +
+			"-	Test Execution." + "<br />" +
+			"-	Test Results Walk Through." + "<br />" +
+			"-	Write Automation scripts for Sanity Testing in VB Script." + "<br />" +
+			"-	Write Automation scripts for data creation for the team.",
 			"images" : [
 				"images/Koala.jpg",
 				"images/Penguins.jpg"
 			]
 		},
 		{
-			"title" : "Mainframes",
-			"dates" : "2012-2015",
-			"description" : "Worked on Mainframes.",
+			"title" : "UnitedHealth Group - OptumRx - Mainframes",
+			"dates" : "2012-till date",
+			"description" : "-	Take part in System Requirement Doc Walk Through – Internal and External." + "<br />" +
+			"-	Take part in High Level Design Doc Walk Through	- Internal and External." + "<br />" +
+			"-	Test Planning – Test Package creation and send for approvals." + "<br />" +
+			"-	Test Cases creation." + "<br />" +
+			"-	Test Cases Walk Through – Internal and External." + "<br />" +
+			"-	Test Execution." + "<br />" +
+			"-	Test Results Walk Through.",
 			"images" : [
 				"images/Koala.jpg",
 				"images/Penguins.jpg"
@@ -165,8 +179,8 @@ var projects = {
 				$(".project-entry:last").append(HTMLprojectTitle.replace("%data%", projects.projects[i].title));
 				$(".project-entry:last").append(HTMLprojectDates.replace("%data%", projects.projects[i].dates));
 				$(".project-entry:last").append(HTMLprojectDescription.replace("%data%", projects.projects[i].description));
-				$(".project-entry:last").append(HTMLprojectImage.replace("%data%", projects.projects[i].images[0]));
-				$(".project-entry:last").append(HTMLprojectImage.replace("%data%", projects.projects[i].images[1]));
+				// $(".project-entry:last").append(HTMLprojectImage.replace("%data%", projects.projects[i].images[0]));
+				// $(".project-entry:last").append(HTMLprojectImage.replace("%data%", projects.projects[i].images[1]));
 		}
 	}
 };
