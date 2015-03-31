@@ -2,9 +2,6 @@ html {
 	position: relative;
 	min-height: 100%;
 }
-body {
-	max-width : 960px;
-}
 .vert {
 	border-left: thick solid lightgrey;
 }
