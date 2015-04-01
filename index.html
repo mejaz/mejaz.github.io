@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>Al Hadi Public School</title>
+  <script src="js/app.js" type="text/javascript"></script>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  
   <!-- // <script src="js/jQuery.js"></script> -->
   <!-- // <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
   <meta name="viewport" content="width=device-width">
@@ -22,27 +24,27 @@
 
       <div class="row nbgcolor">
         <h3 class="text-center">
-          <a href="home.html">Home</a> |
-          <a href="admissions.html">Admissions</a> |
-          <a href="syllabus.html">Syllabus</a> |
-          <a href="gallery.html">Gallery</a> |
-          <a href="hwt.html">How We Teach</a> |
-          <a href="blog.html">School Blog</a> |
-          <a href="contactus.html">Contact Us</a>
+          <a href="#" onclick="home('header','content', 'hom')">Home</a> |
+          <a href="#" onclick="home('header','content', 'adm')">Admissions</a> |
+          <a href="#" onclick="home('header','content', 'syl')">Syllabus</a> |
+          <a href="#" onclick="home('header','content', 'gal')">Gallery</a> |
+          <a href="#" onclick="home('header','content', 'hwt')">How We Teach</a> |
+          <a href="#" onclick="home('header','content', 'sbl')">School Blog</a> |
+          <a href="#" onclick="home('header','content', 'cnt')">Contact Us</a>
         </h3>
       </div>
 
       <div class="row">
         <div class="bod text-center">
-          <div class=".col-md-3 thought">
+          <div class=".col-md-3 thought th">
             <h4>Thought for Today!<br /></h4>
             <h5>Yesterday is a History, and today is up for grabs.</h5>
            </div> 
           <div class="vert"></div>
           <!-- <div class=""> -->
             <div class=".col-md-9 text-left heading">
-              <h4>Home<br /><br /></h4>
-              We have spent some time describing why we need to test, but we have not discussed
+              <h4 id="header">Home<br /><br /></h4>
+              <div id="content">We have spent some time describing why we need to test, but we have not discussed
 what testing is. What do we mean by the word testing? We use the words
 test and testing in everyday life and earlier we said testing could be described as
 'checking the software is OK'. That is not a detailed enough definition to help
@@ -62,8 +64,7 @@ severity of the failures identified, and also whether the driver has been able t
 meet the driving requirements. A single severe fault is enough to fail the whole
 test, but a small number of minor faults might still mean the test is passed.
 Many minor faults would reduce the confidence of the examiner in the quality
-—of the driving to the point where the driver cannot pass.
-
+—of the driving to the point where the driver cannot pass.</div>
             </div>
         </div>
       </div>
@@ -74,5 +75,6 @@ Many minor faults would reduce the confidence of the examiner in the quality
 
     </div>
 </div>
+
 </body>
 </html>
