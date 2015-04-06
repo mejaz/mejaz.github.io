@@ -64,6 +64,8 @@ tr td {
 
 }
 .hbgcolor {
+	padding-top: 1%;
+	padding-bottom: 1%;
 	background-color: slateblue;
 /*	display: flex;
 	flex : wrap;*/
@@ -89,6 +91,12 @@ tr td {
 	.heading, .nav, .name {
 		padding-left: 7%;
 		padding-right: 7%;
+	}
+	h1 {
+		font-size: 22px;
+	}
+	h3 {
+		font-size: 18px;
 	}
 	
 }

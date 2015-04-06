@@ -131,8 +131,7 @@ var contactHTML = "For any queries, please contact at the below numbers.<br />\
                   <li>+91-9873446383</li>\
                   <li>+91-9899269672</li>\
                 </ul>\
-                <p>Or email us at <a href=mailto:mohdejazsiddiqui@gmail.com>mohdejazsiddiqui@gmail.com</a>.<br /><br />\
-                <div id=\"googleMap\" style=\"width:500px;height:380px;\"></div>";
+                <p>Or email us at <a href=mailto:mohdejazsiddiqui@gmail.com>mohdejazsiddiqui@gmail.com</a>.<br /><br />"    
 
 // For any queries, please fill the form below and click on <b>Send.</b><br /><br />
 
