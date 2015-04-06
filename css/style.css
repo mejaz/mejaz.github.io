@@ -51,9 +51,6 @@ tr td {
 	background-size: 100%;
 }
 
-.logo {
-	margin : 0 auto;
-}
 .bgcolor {
 	/*background-color: lightpink;*/
 }
@@ -63,9 +60,10 @@ tr td {
 	/*border: 1px solid lightgrey;*/
 
 }
+.log {
+	padding-top: 2%;
+}
 .hbgcolor {
-	padding-top: 1%;
-	padding-bottom: 1%;
 	background-color: slateblue;
 /*	display: flex;
 	flex : wrap;*/
@@ -88,16 +86,15 @@ tr td {
 	.vert {
 		display: none;
 	}
-	.heading, .nav, .name {
-		padding-left: 7%;
-		padding-right: 7%;
-	}
 	h1 {
 		font-size: 22px;
 	}
 	h3 {
 		font-size: 18px;
 	}
-	
+	.heading, .name, h3 {
+		padding-left: 7%;
+		padding-right: 7%;
+	}
 }
 
