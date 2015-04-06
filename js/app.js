@@ -35,27 +35,49 @@ var admissionsHTML = "Admissions to <b>Al Hadi Public School</b> starts in the m
         </div>\
       </div>";
 
-var syllabusHTML = "Books and Syllabus are mentioned below for each class:<br /><br />\
-              <ol>\
-                <li><a href='#'>Nursery</a></li><br />\
-                <li><a href='#'>K.G.</a></li><br />\
-                <li><a href='#'>First - I</a></li><br />\
-                <li><a href='#'>Second - II</a></li><br />\
-                <li><a href='#'>Third - III</a></li><br />\
-                <li><a href='#'>Fourth - IV</a></li><br />\
-                <li><a href='#'>Fifth - V</a></li><br />\
-                <li><a href='#'>Sixth - VI</a></li><br />\
-                <li><a href='#'>Seventh - VII</a></li><br />\
-            </ol>\
-              For more information regarding the syllabus or the book shop, please contact us by following this link <a href='#' onclick=\"home(\'header\',\'content\', \'cnt\')\">Contact Us</a> <br /><br />\
-            </div>\
-        </div>\
-      </div>";
+var syllabusHTML = "<div>Books and Syllabus are mentioned below for each class:</div><br />\
+              <div class='container'>\
+              <div class='col-md-12'>\
+                <div class='col-md-4'><a href='#' onclick=\"okay('tr1td1', 'nurs')\">Nursery</a><br />\
+                <div id='tr1td1'></div>\
+                </div>\
+                <div class='col-md-4'><a href='#' onclick=\"okay('tr1td2', 'kg')\">K.G.</a><br />\
+                  <div id='tr1td2'></div>\
+                </div>\
+                <div class='col-md-4'><a href='#' onclick=\"okay('tr1td3', 'first')\">First - I</a><br />\
+                  <div id='tr1td3'></div>\
+                </div>\
+              </div>\
+              <div class='col-md-12'>\
+                <div class='col-md-4'><a href='#' onclick=\"okay('tr2td1', 'second')\">Second - II</a><br />\
+                <div id='tr2td1'></div>\
+                </div>\
+                <div class='col-md-4'><a href='#' onclick=\"okay('tr2td2', 'third')\">Third - III</a><br />\
+                  <div id='tr2td2'></div>\
+                </div>\
+                <div class='col-md-4'><a href='#' onclick=\"okay('tr2td3', 'fourth')\">Fourth - IV</a><br />\
+                  <div id='tr2td3'></div>\
+                </div>\
+              </div>\
+              <div class='col-md-12'>\
+                <div class='col-md-4'><a href='#' onclick=\"okay('tr3td1', 'fifth')\">Fifth - V</a><br />\
+                <div id='tr3td1'></div>\
+                </div>\
+                <div class='col-md-4'><a href='#' onclick=\"okay('tr3td2', 'sixth')\">Sixth - VI</a><br />\
+                  <div id='tr3td2'></div>\
+                </div>\
+                <div class='col-md-4'><a href='#' onclick=\"okay('tr3td3', 'seventh')\">Seventh -VII</a><br />\
+                  <div id='tr3td3'></div>\
+                </div>\
+              </div>\
+              </div><br />\
+              <div>For more information regarding the syllabus or the book shop, please contact us by following this link <a href='#' onclick=\"home(\'header\',\'content\', \'cnt\')\">\
+              Contact Us</a> <br /><br></div>";
 
 var galleryHTML = "Al Hadi Public School is located at a 500m distance inside Moon Palace DDC Colony. <br /><br />\
               <img class='img-responsive' src='images/Lighthouse.jpg'><br /><br />\
               The School has spacious classrooms.<br /><br />\
-              <img class='img-responsive' src='images/Desert.jpg'><br /><br />\
+              <img class='img-responsive' src='C:/Users/DELL/Desktop/trans.png'><br /><br />\
             </div>\
         </div>\
       </div>";
@@ -104,18 +126,99 @@ test, but a small number of minor faults might still mean the test is passed.\
 Many minor faults would reduce the confidence of the examiner in the quality\
 —of the driving to the point where the driver cannot pass.";
 
-var contactHTML = "For any queries, please fill the form below and click on <b>Send.</b><br /><br />\
-              <label for='to'>To : </label>\
-              <label for='temail'>mohdejazsiddiqui@gmail.com</label><br />\
-              <label for='from'>From : </label>\
-              <input type='text' name='from'><br />\
-              <label for='query'>Query : </label><br />\
-              <textarea cols='50' rows='5' placeholder='Enter your query...''></textarea><br />\
-              <button onclick='#'>Send</button>\
-            </div>\
-        </div>\
-      </div>";
+var contactHTML = "For any queries, please contact at the below numbers.<br />\
+                <ul>\
+                  <li>+91-9873446383</li>\
+                  <li>+91-9899269672</li>\
+                </ul>\
+                <p>Or email us at <a href=mailto:mohdejazsiddiqui@gmail.com>mohdejazsiddiqui@gmail.com</a>.<br /><br />\
+                <div id=\"googleMap\" style=\"width:500px;height:380px;\"></div>";
 
+// For any queries, please fill the form below and click on <b>Send.</b><br /><br />
+
+              // <label for='to'>To : </label>\
+              // <label for='temail'>AL HADI PUBLIC SCHOOL</label><br />\
+              // <label for='from'>From : </label>\
+              // <input type='text' name='from'><br />\
+              // <label id='que' for='query'>Query : </label><br />\
+              // <textarea cols='50' rows='5' placeholder='Enter your query...''></textarea><br /><br />\
+              // <button onclick='email()'>Send</button>\
+      //       "</div>\
+      //   </div>\
+      // </div>";
+
+var nurserySyl = "<div id='nurs' style='display : none'>\
+                  <ul>\
+                    <li>Mathematics</li>\
+                      <li>English</li>\
+                      <li>Hindi</li>\
+                      <li>Urdu</li>\
+                  </ul>\
+              </div>";
+var kgSyl = "<div id='kg' style='display : none'>\
+                  <ul>\
+                    <li>Mathematics</li>\
+                      <li>English</li>\
+                      <li>Hindi</li>\
+                      <li>Urdu</li>\
+                  </ul>\
+              </div>";
+var firstSyl = "<div id='first' style='display : none'>\
+                  <ul>\
+                    <li>Mathematics</li>\
+                      <li>English</li>\
+                      <li>Hindi</li>\
+                      <li>Urdu</li>\
+                  </ul>\
+              </div>";
+var secondSyl = "<div id='second' style='display : none'>\
+                  <ul>\
+                    <li>Mathematics</li>\
+                      <li>English</li>\
+                      <li>Hindi</li>\
+                      <li>Urdu</li>\
+                  </ul>\
+              </div>";
+var thirdSyl = "<div id='third' style='display : none'>\
+                  <ul>\
+                    <li>Mathematics</li>\
+                      <li>English</li>\
+                      <li>Hindi</li>\
+                      <li>Urdu</li>\
+                  </ul>\
+              </div>";
+var fourthSyl = "<div id='fourth' style='display : none'>\
+                  <ul>\
+                    <li>Mathematics</li>\
+                      <li>English</li>\
+                      <li>Hindi</li>\
+                      <li>Urdu</li>\
+                  </ul>\
+              </div>";
+var fifthSyl = "<div id='fifth' style='display : none'>\
+                  <ul>\
+                    <li>Mathematics</li>\
+                      <li>English</li>\
+                      <li>Hindi</li>\
+                      <li>Urdu</li>\
+                  </ul>\
+              </div>"; 
+var sixthSyl = "<div id='sixth' style='display : none'>\
+                  <ul>\
+                    <li>Mathematics</li>\
+                      <li>English</li>\
+                      <li>Hindi</li>\
+                      <li>Urdu</li>\
+                  </ul>\
+              </div>"; 
+var seventhSyl = "<div id='seventh' style='display : none'>\
+                  <ul>\
+                    <li>Mathematics</li>\
+                      <li>English</li>\
+                      <li>Hindi</li>\
+                      <li>Urdu</li>\
+                  </ul>\
+              </div>"; 
 var dict = {
 	"hom" : [homeHTML, "Home"],
 	"adm" : [admissionsHTML, "Admissions"],
@@ -126,9 +229,38 @@ var dict = {
 	"cnt" : [contactHTML, "Contact Us"]
 };
 
+var sylDict = {
+  "tr1td1" : nurserySyl,
+  "tr1td2" : kgSyl,
+  "tr1td3" : firstSyl,
+  "tr2td1" : secondSyl,
+  "tr2td2" : thirdSyl,
+  "tr2td3" : fourthSyl,
+  "tr3td1" : fifthSyl,
+  "tr3td2" : sixthSyl,
+  "tr3td3" : seventhSyl
+}
+
 function home(id1, id2, ntxt) {
 		var cont1 = document.getElementById(id1);
 		var cont2 = document.getElementById(id2);
 		cont1.innerHTML = dict[ntxt][1];
 		cont2.innerHTML = dict[ntxt][0];
+}
+
+function email() {
+  var url = "mailto:mohdejazsiddiqui@gmail.com" + "?cc=mohdejazsiddiqui@gmail.com" + "&subject=" + encodeURI("Admissions") + 
+  "&body=" + document.getElementById('que').value;
+  window.location.href = url;
+}
+
+function okay(argg1, argg2) {
+  if ($('#' + argg1).is(':empty')) {
+    var a = $(sylDict[argg1]);
+    $('#' + argg1).append(a);
+    $('#' + argg2).slideDown("slow");
+  }
+  else {
+    $('#' + argg2).slideToggle("slow");
+  }
 }
