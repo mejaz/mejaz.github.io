@@ -2,6 +2,27 @@ html {
 	position: relative;
 	min-height: 100%;
 }
+
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%;
+	height: auto;
+/*	margin: 0 auto -60px;
+	padding: 0 0 60px;*/
+}
+.footer {
+	height: 60px;
+	background-color: slateblue;
+	bottom: 0;
+}
+.navi {
+	/*background-color: #444444;*/
+	background-color: lightgrey;
+}
+
 .vert {
 	border-left: thick solid lightgrey;
 }
@@ -10,6 +31,7 @@ html {
 .bod {
   display: flex;  
   flex : nowrap;
+  background-color: slateblue;
   /*width: 100%;*/
 }
 /**{
@@ -71,14 +93,14 @@ tr td {
 .nbgcolor {
 	background-color: lightgrey;
 }
-.fbgcolor {
+/*.fbgcolor {
 	position: absolute;
 	left: 0px;
 	right: 0px;
 	bottom: 20px;
 	width: 100%;
-	background-color: slateblue;
-}
+	
+}*/
 @media only screen and (max-width: 750px) {
 	.th {
 		display: none;

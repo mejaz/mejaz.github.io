@@ -18,9 +18,9 @@ severity of the failures identified, and also whether the driver has been able t
 meet the driving requirements. A single severe fault is enough to fail the whole\
 test, but a small number of minor faults might still mean the test is passed.\
 Many minor faults would reduce the confidence of the examiner in the quality\
-—of the driving to the point where the driver cannot pass.";
+—of the driving to the point where the driver cannot pass.<br />";
 
-var admissionsHTML = "Admissions to <b>Al Hadi Public School</b> starts in the month of April every year.<br /><br />\
+var admissionsHTML = "Admissions to <b>Al Hadi Public School</b> starts in the month of April every year.<br />\
               We are currently taking admissions in classes from <b>Nursery</b> to <b>Class VII.</b><br /><br />\
               <b>Admission Procedure:</b><br /><br />\
               <ol>\
@@ -37,7 +37,7 @@ var admissionsHTML = "Admissions to <b>Al Hadi Public School</b> starts in the m
 
 var syllabusHTML = "<div>Books and Syllabus are mentioned below for each class:</div><br />\
               <div class='container'>\
-              <div class='col-md-12'>\
+              <div class='col-md-12 par'>\
                 <div class='col-md-4'><a href='#' onclick=\"okay('tr1td1', 'nurs')\">Nursery</a><br />\
                 <div id='tr1td1'></div>\
                 </div>\
@@ -48,7 +48,7 @@ var syllabusHTML = "<div>Books and Syllabus are mentioned below for each class:<
                   <div id='tr1td3'></div>\
                 </div>\
               </div>\
-              <div class='col-md-12'>\
+              <div class='col-md-12 par'>\
                 <div class='col-md-4'><a href='#' onclick=\"okay('tr2td1', 'second')\">Second - II</a><br />\
                 <div id='tr2td1'></div>\
                 </div>\
@@ -59,7 +59,7 @@ var syllabusHTML = "<div>Books and Syllabus are mentioned below for each class:<
                   <div id='tr2td3'></div>\
                 </div>\
               </div>\
-              <div class='col-md-12'>\
+              <div class='col-md-12 par'>\
                 <div class='col-md-4'><a href='#' onclick=\"okay('tr3td1', 'fifth')\">Fifth - V</a><br />\
                 <div id='tr3td1'></div>\
                 </div>\
